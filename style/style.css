@@ -1,0 +1,194 @@
+div.bg_top {
+    background-color: #01417c;
+    width: 100%;
+    height: 158px;
+    position: relative;
+}
+
+div.white_stripe {
+    background-image: url("../images/bg/bg_top.gif");
+    background-repeat: no-repeat;
+    height: 92px;
+    width: 950px;
+    position: absolute;
+    margin-left: 197px;
+    margin-top: 60px;
+}
+
+div.white_stripe h5 {
+    color: #3b3b3c;
+    font-size: 12px;
+    margin-left: 248px;
+    margin-top: 53px;
+    word-spacing: 18px;
+    width: 208px;
+    position: absolute;
+}
+
+img.company {
+    margin-top: 16px;
+    margin-left: 12px;
+    position: absolute;
+}
+
+img.call {
+    margin-left: 738px;
+    margin-top: 33px;
+    position: absolute;
+}
+
+div.call_us {
+    width: 90px;
+    float: right;
+    margin-right: 72px;
+    margin-top: 35px;
+}
+
+h4.call {
+    color: #406540;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+p {
+    color: #013c72;
+    font-weight: bold;
+    word-spacing: 5px;
+    font-size: 21px;
+}
+
+div.halv_green {
+    width: 951px;
+    background-image: url("../images/bg/bg_menu.png");
+    background-repeat: no-repeat;
+    margin-top: 85px;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+div.bg_middle {
+    background-color: #acc2ac;
+    width: 100%;
+    height: 819px;
+}
+
+div.content {
+    margin: 0 auto;
+    width: 950px;
+}
+
+div#menu {
+    height: 37px;
+    width: 950px;
+}
+
+div#menu ul {
+    padding-top: 10px;
+}
+
+div#menu ul li {
+    display: inline;
+    margin-right: 59px;
+}
+
+div#menu ul li:first-child {
+    margin-left: 41px;
+}
+
+div#menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div.middle_content {
+    width: 951px;
+    min-height: 675px;
+    margin-left: 1px;
+    position: relative;
+}
+
+image.photo_nr_1 {
+    /*width: 329px;*/
+    /*height: 434px;*/
+    /*margin-left: 10px;*/
+}
+
+img.photo_nr_2 {
+    position: absolute;
+}
+
+div#form {
+    background-color: #a7c2dc;
+    height: 393px;
+    width: 312px;
+    float: right;
+}
+
+h2 {
+    width: 182px;
+    color: #1b4a7b;
+    font-size: 19px;
+    margin-left: 34px;
+    margin-top: 13px;
+}
+
+div#form img {
+    margin-left: 230px;
+    margin-top: -18px;
+}
+
+form {
+    width: 266px;
+    height: 276px;
+    margin-left: 5px;
+}
+
+label {
+    margin-left: 30px;
+    font-size: 13px;
+    color: #3b593b;
+}
+
+label.first {
+    margin-right: 5px;
+    line-height: 27px;
+}
+
+input {
+    margin-right: -26px;
+}
+
+option {
+    font-size: 13px;
+}
+
+input#submit {
+    background-image: url("../images/search_button.png");
+    height: 27px;
+    width: 118px;
+    margin-top: 21px;
+    margin-left: 95px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+select.select {
+    margin-left: 5px;
+}
+select.rent {
+    margin-left: 53px;
+}
+
