@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=8">
@@ -8,24 +8,24 @@
     <title>Comcap</title>
 </head>
 <body>
-<div class="bg_top">
+<div id="body">
     <div class="white_stripe"> <!--header and menu-->
 
         <img class="company" src="images/company_name.png" alt="company name">
-        <h5 class="slogan">SOME SLOGAN GOES HERE</h5>
 
-        <img class="call" src="images/icons/call_phone.png" alt="call us">
+        <h2 class="slogan">SOME SLOGAN GOES HERE</h2>
 
         <div class="call_us group">
+            <img class="call" src="images/icons/call_phone.png" alt="call us">
             <h4 class="call">CALL US AT</h4>
 
             <p class="number">(333) 999-9999</p>
         </div>
 
-        <div class="halv_green ">
-            <div id="menu">
+        <div id="menu" class="group">
+            <div>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About Company</a></li>
                     <li><a href="#">Properties</a></li>
                     <li><a href="#">Amenities</a></li>
@@ -46,7 +46,7 @@
                 <h2>FIND A PROPERTY</h2>
                 <img src="images/icons/loupe.png" alt="loupe">
 
-                <form action="">
+                <form action="" method="get">
                     <dl>
                         <dt><label class="first">BEDROOMS</label></dt>
                         <dd><input type="radio" id="any">
@@ -58,7 +58,6 @@
                             <input type="radio" id="three">
                             <label for="three">3</label>
                         </dd>
-                        <br>
                         <dt><label class="first">TYPE</label></dt>
                         <dd><input type="radio" id="any_type">
                             <label for="any_type">Any</label>
@@ -116,9 +115,10 @@
                             <label for="attached">Attached</label>
                             <input type="radio" id="detached">
                             <label for="detached">Detached</label><br>
-                            <input id="submit" type="submit" value="SEARCH NOW">
+
                         </dd>
                     </dl>
+                    <input id="submit" type="submit" value="SEARCH NOW">
                 </form>
             </div>
             <div id="properties">
@@ -127,21 +127,21 @@
                 <img class="semicircle_b" src="images/semicircle1b.png" alt="semicircle">
 
                 <div class="properties">
-                    <h5>FEATURED PROPERTIES</h5>
+                    <h5><a href="#">FEATURED PROPERTIES</a></h5>
                 </div>
                 <div id="offer" class="group">
                     <div class="photo">
-                        <img src="images/icons/camera.jpg" alt="camera">
+                        <a href="#"><img src="images/icons/camera.jpg" alt="camera"></a>
 
                         <p class="photo_tur">TAKE A<span> PHOTO TOUR</span></p>
                     </div>
                     <div class="view">
-                        <img src="images/icons/dolar.jpg" alt="dolar">
+                        <a href="#"><img src="images/icons/dolar.jpg" alt="dolar"></a>
 
                         <p class="dolar">VIEW <span>SPECIAL OFFERS</span></p>
                     </div>
                     <div class="blog">
-                        <img src="images/icons/mobile.jpg" alt="mobile">
+                        <a href="#"><img src="images/icons/mobile.jpg" alt="mobile"></a>
 
                         <p class="read">READ THE <span>COMCAP BLOG</span></p>
                     </div>
@@ -163,10 +163,10 @@
                         <img class="ofer_photo" src="images/photo/3photo.jpg" alt="photo">
                         <img class="triangle" src="images/triangle.png" alt="triangle">
 
-                        <p class="price">$950</p>
+                        <p class="price">$1000</p>
 
                         <div class="description">
-                            <p class="orchard">ORCHARD HILL APARTMENTS<br><span>Thornton, Colorado</span></p>
+                            <p class="orchard">SPRING HOLLOW APARTMENTS<br><span>Brighton, Colorado</span></p>
                         </div>
 
                     </div>
@@ -174,10 +174,11 @@
                         <img class="ofer_photo" src="images/photo/3photo.jpg" alt="photo">
                         <img class="triangle" src="images/triangle.png" alt="triangle">
 
-                        <p class="price">$950</p>
+
+                        <p class="price">$1200</p>
 
                         <div class="description">
-                            <p class="orchard">ORCHARD HILL APARTMENTS<br><span>Thornton, Colorado</span></p>
+                            <p class="orchard">SOME OTHER APARTMENTS<br><span>Somewhere, Colorado</span></p>
                         </div>
 
                     </div>
@@ -185,9 +186,9 @@
                 </div>
             </div>
             <div id="footer">
-                <img class="house" src="images/icons/house.png" alt="house">
+                <a href="#"><img class="house" src="images/icons/house.png" alt="house"></a>
 
-                <p class="list_footer"><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">AMENITIES</a> | <a href="#">PHOTO GALLERY</a> | <a href="#">BLOG</a> | <a href="#">CONTACT</a> | <a href="#">PRIVATY POLICY</a></p>
+                <p class="list_footer"><a href="#">Home</a> | <a href="#">About us</a> | <a href="#">Amenities</a> | <a href="#">Photo Gallery</a> | <a href="#">Blog</a> | <a href="#">Contact</a> | <a href="#">Privaty Policy</a></p>
 
                 <p class="realty_company">© 2008 ComCap Realty Company</p>
             </div>

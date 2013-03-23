@@ -1,4 +1,8 @@
-div.bg_top {
+body {
+    background-color: #acc2ac;
+}
+
+div#body {
     background-image: url("../images/bg/bg_top.jpg");
     background-repeat: repeat-x;
     width: 100%;
@@ -16,15 +20,15 @@ div.white_stripe {
     margin-top: 60px;
 }
 
-h5.slogan {
+h2.slogan {
     color: #3b3b3c;
-    font-size: 12px;
-    left: 247px;
-    top: 53px;
-    word-spacing: 15px;
+    font-size: 10px;
+    left: 227px;
+    top: 41px;
     width: 208px;
     position: absolute;
     font-weight: bold;
+    font-family: Verdana, sans-serif;
 }
 
 img.company {
@@ -34,9 +38,9 @@ img.company {
 }
 
 img.call {
-    margin-left: 738px;
-    margin-top: 33px;
     position: absolute;
+    left: -51px;
+    top: -5px;
 }
 
 div.call_us {
@@ -44,6 +48,7 @@ div.call_us {
     float: right;
     margin-right: 72px;
     margin-top: 35px;
+    position: relative;
 }
 
 h4.call {
@@ -59,9 +64,9 @@ p.number {
     font-size: 14px;
 }
 
-div.halv_green {
+div#menu {
     width: 951px;
-    background-image: url("../images/bg/bg_menu.png");
+    background-image: url("../images/bg/bg_menu.gif");
     background-repeat: no-repeat;
     margin-top: 85px;
 }
@@ -91,27 +96,43 @@ div.content {
     width: 950px;
 }
 
-div#menu {
+div#menu div {
     height: 37px;
     width: 950px;
 }
 
-div#menu ul {
-    padding-top: 10px;
+div#menu div ul {
+    /*padding-top: 10px;*/
 }
 
-div#menu ul li {
-    display: inline;
-    margin-right: 59px;
+div#menu div ul li {
+    display: block;
+    float: left;
+    margin-right: -4px;
 }
 
-div#menu ul li:first-child {
-    margin-left: 41px;
+div#menu div ul li:first-child {
+    margin-left: 13px;
 }
 
-div#menu ul li a {
+div#menu div ul li a {
     text-decoration: none;
     color: #ffffff;
+    margin: 0 33px;
+}
+div#menu div ul li link a:visited {
+    background-color:red;
+}
+
+div#menu div ul li a:hover {
+    color: #024584;
+}
+li.active {
+    background-image: url("../images/bg/bg_home.gif");
+    height: 42px;
+    border-radius:15px 2px 0 0 ;
+    color: #ffffff;
+
 }
 
 div.middle_content {
@@ -162,6 +183,7 @@ input#submit {
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
+    border: none;
 }
 
 dt {
@@ -218,6 +240,11 @@ div.properties h5 {
     background-repeat: no-repeat;
 }
 
+div.properties h5 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 div#offer {
     margin-left: 239px;
     margin-top: -58px;
@@ -226,6 +253,7 @@ div#offer {
 div.photo {
     float: left;
     margin-left: 25px;
+    margin-top: 4px;
 }
 
 p.photo_tur {
@@ -243,7 +271,7 @@ span {
 div.view {
     float: left;
     margin-left: 47px;
-    margin-top: 7px;
+    margin-top: 5px;
 }
 
 p.dolar {
@@ -256,7 +284,7 @@ p.dolar {
 
 div.blog {
     margin-left: 47px;
-    margin-top: 7px;
+    margin-top: 3px;
     float: left;
 }
 
@@ -265,7 +293,7 @@ p.read {
     color: #58697d;
     font-weight: bold;
     margin-left: 41px;
-    margin-top: -28px;
+    margin-top: -25px;
 }
 
 div#apartments {
@@ -346,16 +374,20 @@ p.list_footer {
     color: #ffffff;
     font-size: 11px;
     position: absolute;
-    left: 86px;
+    left: 127px;
     top: 16px;
-
+    font-family: Verdana, sans-serif;
 }
 
 p.list_footer a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 12px;
-    margin-right: 17px;
+    margin-left: 8px;
+    margin-right: 11px;
+}
+
+p.list_footer a:hover {
+    color: #486e48;
 }
 
 p.realty_company {
@@ -364,7 +396,6 @@ p.realty_company {
     font-size: 12px;
     left: 753px;
     top: 16px;
-    font-family: Verdana sans-serif;
 }
 
 
