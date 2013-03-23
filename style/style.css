@@ -7,7 +7,7 @@ div.bg_top {
 }
 
 div.white_stripe {
-    background-image: url("../images/bg/bg_top.gif");
+    background-image: url("../images/bg/bg_top2.png");
     background-repeat: no-repeat;
     height: 92px;
     width: 950px;
@@ -16,15 +16,16 @@ div.white_stripe {
     margin-top: 60px;
 }
 
-/*div.white_stripe h5 {*/
-/*color: #3b3b3c;*/
-/*font-size: 12px;*/
-/*margin-left: 248px;*/
-/*margin-top: 53px;*/
-/*word-spacing: 18px;*/
-/*width: 208px;*/
-/*position: absolute;*/
-/*}*/
+h5.slogan {
+    color: #3b3b3c;
+    font-size: 12px;
+    left: 247px;
+    top: 53px;
+    word-spacing: 15px;
+    width: 208px;
+    position: absolute;
+    font-weight: bold;
+}
 
 img.company {
     margin-top: 16px;
@@ -181,18 +182,25 @@ dd {
 }
 
 img.semicircle {
-    margin-top: -153px;
-    position: relative;
+    top: -160px;
+    position: absolute;
+}
+
+img.semicircle_b {
+    position: absolute;
+    top: -57px;
+    left: 637px;
 }
 
 div#properties {
     background-color: #ffffff;
-    width: 951px;
+    width: 949px;
+    position: relative;
 }
 
 div.properties {
     width: 193px;
-    margin-left: 28px;
+    margin-left: 17px;
     margin-top: 10px;
 
 }
@@ -203,7 +211,7 @@ div.properties h5 {
     width: 193px;
     height: 35px;
     padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 21px;
     height: 28px;
     font-size: 13px;
     font-family: Verdana sans-serif;
@@ -264,7 +272,7 @@ div#apartments {
     background-image: url("../images/bg/bg_blue.png");
     width: 914px;
     height: 211px;
-    margin: 16px auto;
+    margin: 12px auto;
     background-repeat: repeat-x;
     padding-top: 5px;
 }
@@ -289,5 +297,75 @@ img.triangle {
     left: 171px;
     top: 99px;
 }
+
+p.price {
+    color: #ffffff;
+    display: block;
+    font-size: 17px;
+    transform: rotate(-27deg);
+    -o-transform: rotate(-27deg);
+    -webkit-transform: rotate(-27deg);
+    -moz-transform: rotate(-27deg);
+    -ms-transform: rotate(-27deg);
+    position: absolute;
+    top: 122px;
+    left: 225px;
+}
+
+p.orchard {
+    font-size: 11px;
+    color: #01294e;
+    font-weight: bold;
+    line-height: 12px;
+    margin-left: 23px;
+    margin-top: 3px;
+}
+
+p.orchard span {
+    font-size: 11px;
+    color: #3b593b;
+}
+
+div#footer {
+    background-image: url("../images/bg/bg_footer.gif");
+    background-repeat: repeat-x;
+    width: 952px;
+    width: 100%;
+    height: 42px;
+    position: relative;
+}
+
+img.house {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    float: left;
+}
+
+p.list_footer {
+    color: #ffffff;
+    font-size: 11px;
+    position: absolute;
+    left: 86px;
+    top: 16px;
+
+}
+
+p.list_footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 12px;
+    margin-right: 17px;
+}
+
+p.realty_company {
+    position: absolute;
+    color: #ffffff;
+    font-size: 12px;
+    left: 753px;
+    top: 16px;
+    font-family: Verdana sans-serif;
+}
+
 
 
