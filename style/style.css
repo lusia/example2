@@ -112,7 +112,7 @@ div#menu ul li a:hover {
 li.active {
     background-image: url("../images/bg/bg_home.gif");
     background-repeat: repeat-x;
-    height: 42px;
+    height: 24px;
     border-radius: 10px 10px 0 0;
     color: #ffffff;
 }
@@ -120,7 +120,7 @@ li.active {
 div#middle_content {
     width: 949px;
     min-height: 675px;
-    margin: 32px 0 0 198px;
+    margin: 28px 0 0 198px;
     position: absolute;
     background-color: #ffffff;
 }
