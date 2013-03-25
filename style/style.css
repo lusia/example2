@@ -2,29 +2,27 @@ body {
     background-color: #acc2ac;
 }
 
-div#body {
+div#bg_top {
     background-image: url("../images/bg/bg_top.jpg");
     background-repeat: repeat-x;
     width: 100%;
     height: 158px;
-    position: relative;
 }
 
-div.white_stripe {
+div#white_stripe {
     background-image: url("../images/bg/bg_top2.png");
     background-repeat: no-repeat;
     height: 92px;
     width: 950px;
-    position: absolute;
-    margin-left: 197px;
-    margin-top: 60px;
+    position: relative;
+    margin: -104px 0 0 197px;
 }
 
 h2.slogan {
     color: #3b3b3c;
     font-size: 10px;
     left: 227px;
-    top: 41px;
+    top: 39px;
     width: 208px;
     position: absolute;
     font-weight: bold;
@@ -32,9 +30,7 @@ h2.slogan {
 }
 
 img.company {
-    margin-top: 16px;
-    margin-left: 12px;
-    position: absolute;
+    margin: 16px 0 0 12px;
 }
 
 img.call {
@@ -46,8 +42,7 @@ img.call {
 div.call_us {
     width: 90px;
     float: right;
-    margin-right: 72px;
-    margin-top: 35px;
+    margin: 35px 72px 0 0;
     position: relative;
 }
 
@@ -68,7 +63,12 @@ div#menu {
     width: 951px;
     background-image: url("../images/bg/bg_menu.gif");
     background-repeat: no-repeat;
-    margin-top: 85px;
+    margin-top: 5px;
+    height: 38px;
+}
+
+div#menu ul {
+    height: 35px;
 }
 
 .group:before,
@@ -85,61 +85,43 @@ div#menu {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-div.bg_middle {
-    background-color: #acc2ac;
-    width: 100%;
-    height: 819px;
-}
-
-div.content {
-    margin: 0 auto;
-    width: 950px;
-}
-
-div#menu div {
-    height: 37px;
-    width: 950px;
-}
-
-div#menu div ul {
-    /*padding-top: 10px;*/
-}
-
-div#menu div ul li {
+div#menu ul li {
     display: block;
     float: left;
-    margin-right: -4px;
+    padding-top: 14px;
 }
 
-div#menu div ul li:first-child {
+div#menu ul li:first-child {
     margin-left: 13px;
 }
 
-div#menu div ul li a {
+div#menu ul li a {
     text-decoration: none;
     color: #ffffff;
     margin: 0 33px;
 }
-div#menu div ul li link a:visited {
-    background-color:red;
+
+div#menu ul li link a:visited {
+    background-color: red;
 }
 
-div#menu div ul li a:hover {
+div#menu ul li a:hover {
     color: #024584;
 }
+
 li.active {
     background-image: url("../images/bg/bg_home.gif");
+    background-repeat: repeat-x;
     height: 42px;
-    border-radius:15px 2px 0 0 ;
+    border-radius: 10px 10px 0 0;
     color: #ffffff;
-
 }
 
-div.middle_content {
+div#middle_content {
     width: 949px;
     min-height: 675px;
-    margin-left: 1px;
-    position: relative;
+    margin: 32px 0 0 198px;
+    position: absolute;
     background-color: #ffffff;
 }
 
@@ -165,21 +147,18 @@ h2 {
     width: 182px;
     color: #1b4a7b;
     font-size: 19px;
-    margin-left: 34px;
-    margin-top: 13px;
+    margin: 14px 0 0 34px;
 }
 
 div#form img {
-    margin-left: 230px;
-    margin-top: -18px;
+    margin: -18px 0 0 230px;
 }
 
 input#submit {
     background-image: url("../images/search_button.png");
     height: 27px;
     width: 118px;
-    margin-top: 21px;
-    margin-left: 95px;
+    margin: 21px 0 0 95px;
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
@@ -190,11 +169,9 @@ dt {
     font-size: 13px;
     color: #3b593b;
     width: 94px;
-    margin-left: 30px;
     display: inline-block;
     text-align: right;
-    margin-bottom: 12px;
-
+    margin: 0 0 12px 30px;
 }
 
 dd {
@@ -222,18 +199,14 @@ div#properties {
 
 div.properties {
     width: 193px;
-    margin-left: 17px;
-    margin-top: 10px;
-
+    margin: 10px 0 0 17px;
 }
 
 div.properties h5 {
     color: #ffffff;
     background-image: url("../images/bg/bg_green.png");
     width: 193px;
-    height: 35px;
-    padding-top: 15px;
-    padding-left: 21px;
+    padding: 15px 0 0 21px;
     height: 28px;
     font-size: 13px;
     font-family: Verdana sans-serif;
@@ -246,20 +219,17 @@ div.properties h5 a {
 }
 
 div#offer {
-    margin-left: 239px;
-    margin-top: -58px;
+    margin: -58px 0 0 239px;
 }
 
 div.photo {
     float: left;
-    margin-left: 25px;
-    margin-top: 4px;
+    margin: 4px 0 0 25px;
 }
 
 p.photo_tur {
-    margin-left: 66px;
+    margin: -24px 0 0 66px;
     font-size: 11px;
-    margin-top: -24px;
     color: #58697d;
     font-weight: bold;
 }
@@ -270,21 +240,18 @@ span {
 
 div.view {
     float: left;
-    margin-left: 47px;
-    margin-top: 5px;
+    margin: 5px 0 0 47px;
 }
 
 p.dolar {
     font-size: 11px;
     color: #58697d;
     font-weight: bold;
-    margin-top: -26px;
-    margin-left: 45px;
+    margin: -26px 0 0 45px;
 }
 
 div.blog {
-    margin-left: 47px;
-    margin-top: 3px;
+    margin: 3px 0 0 47px;
     float: left;
 }
 
@@ -292,8 +259,7 @@ p.read {
     font-size: 11px;
     color: #58697d;
     font-weight: bold;
-    margin-left: 41px;
-    margin-top: -25px;
+    margin: -25px 0 0 41px;
 }
 
 div#apartments {
@@ -345,8 +311,7 @@ p.orchard {
     color: #01294e;
     font-weight: bold;
     line-height: 12px;
-    margin-left: 23px;
-    margin-top: 3px;
+    margin: 3px 0 0 23px;
 }
 
 p.orchard span {
@@ -382,8 +347,7 @@ p.list_footer {
 p.list_footer a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 8px;
-    margin-right: 11px;
+    margin: 0 11px 0 8px;
 }
 
 p.list_footer a:hover {
