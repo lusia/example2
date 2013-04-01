@@ -70,7 +70,7 @@ div#call_us {
     left:780px
 }
 
-img#call {
+img#call_icon {
     float: left;
     margin-right: 8px;
 }
@@ -327,10 +327,14 @@ p.list_footer a:hover {
     color: #486e48;
 }
 
-p.realty_company {
+p#template_source {
     position: absolute;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
     left: 753px;
     top: 16px;
+}
+p#template_source a {
+    color: #ffffff;
+    outline: none;
 }
