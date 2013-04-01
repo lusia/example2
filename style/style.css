@@ -12,15 +12,15 @@
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-.fr{
+.fr {
     float: right;
 }
 
-.fl{
+.fl {
     float: left;
 }
 
-.cb{
+.cb {
     clear: both;
 }
 
@@ -63,27 +63,26 @@ img.company {
     margin: 16px 0 0 12px;
 }
 
-div.call_us {
-    width: 90px;
-    float: right;
-    margin: 35px 72px 0 0;
-    position: relative;
-}
-
-img.call {
+div#call_us {
+    width: 160px;
     position: absolute;
-    left: -51px;
-    top: -5px;
+    top: 20px;
+    left:780px
 }
 
-p.call {
+img#call {
+    float: left;
+    margin-right: 8px;
+}
+
+p#call {
     color: #406540;
     font-weight: bold;
     font-size: 11px;
-    line-height: 16px;
+    line-height: 24px;
 }
 
-p.number {
+p#number {
     color: #013c72;
     font-weight: bold;
     font-size: 13px;
@@ -139,7 +138,7 @@ div#middle {
 div#form {
     background-color: #a7c2dc;
     height: 388px;
-    width: 316px;
+    width: 317px;
     float: right;
 }
 
@@ -214,10 +213,10 @@ div.properties h5 a {
 }
 
 div#offer {
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
-div#offer div{
+div#offer div {
     float: left;
     margin-left: 47px;
     width: 190px;
@@ -281,7 +280,7 @@ p.price {
     left: 225px;
 }
 
-div.apartment div.description p{
+div.apartment div.description p {
     font-size: 11px;
     color: #01294e;
     font-weight: bold;

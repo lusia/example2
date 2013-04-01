@@ -14,12 +14,12 @@
 
     <h2 class="slogan">SOME SLOGAN GOES HERE</h2>
 
-    <div class="call_us group">
-        <img class="call" src="images/icons/call_phone.png" alt="call us">
+    <div id="call_us" class="group">
+        <img id="call" src="images/icons/call_phone.png" alt="call us">
 
-        <p class="call">CALL US AT</p>
+        <p id="call">CALL US AT</p>
 
-        <p class="number">(333) 999-9999</p>
+        <p id="number">(333) 999-9999</p>
     </div>
     <div id="menu" class="group content">
         <ul>
@@ -35,79 +35,83 @@
 </div>
 
 <div id="middle" class="content">
-    <img src="images/photo/1photo.jpg" alt="property in NY"/><img src="images/photo/2photo.jpg" alt="Cool villa in Ohio"/>
+    <div class="group">
+        <img src="images/photo/1photo.jpg" alt="property in NY" class="fl"/>
+        <img src="images/photo/2photo.jpg" alt="Cool villa in Ohio" class="fl"/>
 
-    <div id="form" class="group">
-        <h2>FIND A PROPERTY</h2>
-        <img src="images/icons/loupe.png" alt="loupe">
+        <div id="form" class="group">
+            <h2>FIND A PROPERTY</h2>
+            <img src="images/icons/loupe.png" alt="loupe">
 
-        <form action="" method="GET">
-            <dl>
-                <dt><label class="first">BEDROOMS</label></dt>
-                <dd><input type="radio" id="any">
-                    <label for="any">Any</label>
-                    <input type="radio" id="one">
-                    <label for="one">1</label>
-                    <input type="radio" id="two">
-                    <label for="two">2</label>
-                    <input type="radio" id="three">
-                    <label for="three">3</label>
-                </dd>
-                <dt><label class="first">TYPE</label></dt>
-                <dd><input type="radio" id="any_type">
-                    <label for="any_type">Any</label>
-                    <input type="radio" id="apt">
-                    <label for="apt">Apt.</label>
-                    <input type="radio" id="townhome">
-                    <label for="townhome">Townhome</label>
-                </dd>
-                <dt><label class="first">COMMUNITY</label></dt>
-                <dd><select class="select" name="community">
-                    <option value="no_reference">No reference</option>
-                    <option value="one">One</option>
-                    <option value="two">Two</option>
-                </select>
-                </dd>
-                <dt><label class="first">RENT</label></dt>
-                <dd><select class="select rent" name="rent">
-                    <option value="no_reference">No reference</option>
-                    <option value="one">One</option>
-                    <option value="two">Two</option>
-                </select>
-                </dd>
-                <dt><label class="first">SQ.FOOTAGE</label></dt>
-                <dd><select class="select" name="footage">
-                    <option value="no_reference">No reference</option>
-                    <option value="one">One</option>
-                    <option value="two">Two</option>
-                </select>
-                </dd>
+            <form action="" method="GET">
+                <dl>
+                    <dt><label class="first">BEDROOMS</label></dt>
+                    <dd><input type="radio" id="any">
+                        <label for="any">Any</label>
+                        <input type="radio" id="one">
+                        <label for="one">1</label>
+                        <input type="radio" id="two">
+                        <label for="two">2</label>
+                        <input type="radio" id="three">
+                        <label for="three">3</label>
+                    </dd>
+                    <dt><label class="first">TYPE</label></dt>
+                    <dd><input type="radio" id="any_type">
+                        <label for="any_type">Any</label>
+                        <input type="radio" id="apt">
+                        <label for="apt">Apt.</label>
+                        <input type="radio" id="townhome">
+                        <label for="townhome">Townhome</label>
+                    </dd>
+                    <dt><label class="first">COMMUNITY</label></dt>
+                    <dd><select class="select" name="community">
+                        <option value="no_reference">No reference</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                    </select>
+                    </dd>
+                    <dt><label class="first">RENT</label></dt>
+                    <dd><select class="select rent" name="rent">
+                        <option value="no_reference">No reference</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                    </select>
+                    </dd>
+                    <dt><label class="first">SQ.FOOTAGE</label></dt>
+                    <dd><select class="select" name="footage">
+                        <option value="no_reference">No reference</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                    </select>
+                    </dd>
 
-                <dt><label class="first">AVAILABILITY</label></dt>
-                <dd><select class="select" name="availability">
-                    <option value="no_reference">No reference</option>
-                    <option value="one">One</option>
-                    <option value="two">Two</option>
-                </select>
-                </dd>
-                <dt><label class="first">PETS POLICY</label></dt>
-                <dd><select class="select" name="pets">
-                    <option value="no_reference">No reference</option>
-                    <option value="one">One</option>
-                    <option value="two">Two</option>
-                </select>
-                </dd>
-                <dt><label class="first">GARAGE</label></dt>
-                <dd><input type="radio" id="any_garage">
-                    <label for="any_garage">Any</label>
-                    <input type="radio" id="attached">
-                    <label for="attached">Attached</label>
-                    <input type="radio" id="detached">
-                    <label for="detached">Detached</label><br>
-                </dd>
-            </dl>
-            <input id="submit" type="submit" value="SEARCH NOW">
-        </form>
+                    <dt><label class="first">AVAILABILITY</label></dt>
+                    <dd><select class="select" name="availability">
+                        <option value="no_reference">No reference</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                    </select>
+                    </dd>
+                    <dt><label class="first">PETS POLICY</label></dt>
+                    <dd><select class="select" name="pets">
+                        <option value="no_reference">No reference</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                    </select>
+                    </dd>
+                    <dt><label class="first">GARAGE</label></dt>
+                    <dd><input type="radio" id="any_garage">
+                        <label for="any_garage">Any</label>
+                        <input type="radio" id="attached">
+                        <label for="attached">Attached</label>
+                        <input type="radio" id="detached">
+                        <label for="detached">Detached</label><br>
+                    </dd>
+                </dl>
+                <input id="submit" type="submit" value="SEARCH NOW">
+            </form>
+
+        </div>
     </div>
     <div class="properties group fl">
         <h5><a href="#">FEATURED PROPERTIES</a></h5>
