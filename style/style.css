@@ -1,5 +1,37 @@
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.fr{
+    float: right;
+}
+
+.fl{
+    float: left;
+}
+
+.cb{
+    clear: both;
+}
+
+.content {
+    margin: 0 auto;
+    width: 951px;
+}
+
 body {
     background-color: #acc2ac;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 div#bg_top {
@@ -12,10 +44,8 @@ div#bg_top {
 div#white_stripe {
     background-image: url("../images/bg/bg_top2.png");
     background-repeat: no-repeat;
-    height: 92px;
-    width: 950px;
     position: relative;
-    margin: -104px 0 0 197px;
+    margin-top: -104px;
 }
 
 h2.slogan {
@@ -33,12 +63,6 @@ img.company {
     margin: 16px 0 0 12px;
 }
 
-img.call {
-    position: absolute;
-    left: -51px;
-    top: -5px;
-}
-
 div.call_us {
     width: 90px;
     float: right;
@@ -46,49 +70,43 @@ div.call_us {
     position: relative;
 }
 
-h4.call {
+img.call {
+    position: absolute;
+    left: -51px;
+    top: -5px;
+}
+
+p.call {
     color: #406540;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 16px;
 }
 
 p.number {
     color: #013c72;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 div#menu {
+    background-image: url("../images/bg/bg_menu.png");
+    background-repeat: repeat-x;
+    height: 42px;
     width: 951px;
-    background-image: url("../images/bg/bg_menu.gif");
-    background-repeat: no-repeat;
-    margin-top: 5px;
-    height: 38px;
 }
 
 div#menu ul {
-    height: 35px;
-}
-
-.group:before,
-.group:after {
-    content: "";
-    display: table;
-}
-
-.group:after {
-    clear: both;
-}
-
-.group {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+    height: 37px;
+    margin-top: 3px;
 }
 
 div#menu ul li {
     display: block;
     float: left;
     padding-top: 14px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 div#menu ul li:first-child {
@@ -98,18 +116,14 @@ div#menu ul li:first-child {
 div#menu ul li a {
     text-decoration: none;
     color: #ffffff;
-    margin: 0 33px;
-}
-
-div#menu ul li link a:visited {
-    background-color: red;
+    margin: 0 30px;
 }
 
 div#menu ul li a:hover {
     color: #024584;
 }
 
-li.active {
+div#menu ul li.active {
     background-image: url("../images/bg/bg_home.gif");
     background-repeat: repeat-x;
     height: 24px;
@@ -117,30 +131,16 @@ li.active {
     color: #ffffff;
 }
 
-div#middle_content {
-    width: 949px;
+div#middle {
     min-height: 675px;
-    margin: 28px 0 0 198px;
-    position: absolute;
     background-color: #ffffff;
-}
-
-img.photo_nr_1 {
-    width: 327px;
-    margin-left: 1px;
-}
-
-img.photo_nr_2 {
-    position: absolute;
-    margin-top: 1px;
 }
 
 div#form {
     background-color: #a7c2dc;
-    height: 393px;
-    width: 312px;
+    height: 388px;
+    width: 316px;
     float: right;
-    margin-right: 1px;
 }
 
 h2 {
@@ -166,16 +166,17 @@ input#submit {
 }
 
 dt {
-    font-size: 13px;
+    font-size: 11px;
     color: #3b593b;
     width: 94px;
     display: inline-block;
     text-align: right;
-    margin: 0 0 12px 30px;
+    margin: 0 0 12px 20px;
+    font-weight: bold;
 }
 
 dd {
-    font-size: 11px;
+    font-size: 10px;
     color: #3b593b;
     display: inline;
 }
@@ -191,23 +192,17 @@ img.semicircle_b {
     left: 637px;
 }
 
-div#properties {
-    background-color: #ffffff;
-    width: 949px;
-    position: relative;
-}
-
 div.properties {
     width: 193px;
-    margin: 10px 0 0 17px;
+    margin: 10px 0 0 18px;
 }
 
 div.properties h5 {
     color: #ffffff;
     background-image: url("../images/bg/bg_green.png");
     width: 193px;
-    padding: 15px 0 0 21px;
     height: 28px;
+    padding: 15px 0 0 21px;
     font-size: 13px;
     font-family: Verdana sans-serif;
     background-repeat: no-repeat;
@@ -219,54 +214,35 @@ div.properties h5 a {
 }
 
 div#offer {
-    margin: -58px 0 0 239px;
+    margin-top: 5px;
 }
 
-div.photo {
+div#offer div{
     float: left;
-    margin: 4px 0 0 25px;
+    margin-left: 47px;
+    width: 190px;
 }
 
-p.photo_tur {
-    margin: -24px 0 0 66px;
-    font-size: 11px;
-    color: #58697d;
-    font-weight: bold;
-}
-
-span {
+div#offer span {
     color: #8ea78e;
 }
 
-div.view {
-    float: left;
-    margin: 5px 0 0 47px;
-}
-
-p.dolar {
+div#offer p {
     font-size: 11px;
     color: #58697d;
     font-weight: bold;
-    margin: -26px 0 0 45px;
+    margin-top: 20px;
 }
 
-div.blog {
-    margin: 3px 0 0 47px;
-    float: left;
-}
-
-p.read {
-    font-size: 11px;
-    color: #58697d;
-    font-weight: bold;
-    margin: -25px 0 0 41px;
+div#offer a {
+    text-decoration: none;
 }
 
 div#apartments {
     background-image: url("../images/bg/bg_blue.png");
     width: 914px;
-    height: 211px;
-    margin: 12px auto;
+    height: 225px;
+    margin: 0px auto;
     background-repeat: repeat-x;
     padding-top: 5px;
 }
@@ -283,7 +259,6 @@ div.apartment {
 
 img.ofer_photo {
     margin: 18px 0 0 21px;
-
 }
 
 img.triangle {
@@ -295,7 +270,7 @@ img.triangle {
 p.price {
     color: #ffffff;
     display: block;
-    font-size: 17px;
+    font-size: 15px;
     transform: rotate(-27deg);
     -o-transform: rotate(-27deg);
     -webkit-transform: rotate(-27deg);
@@ -306,7 +281,7 @@ p.price {
     left: 225px;
 }
 
-p.orchard {
+div.apartment div.description p{
     font-size: 11px;
     color: #01294e;
     font-weight: bold;
@@ -314,7 +289,7 @@ p.orchard {
     margin: 3px 0 0 23px;
 }
 
-p.orchard span {
+div.apartment div.description p span {
     font-size: 11px;
     color: #3b593b;
 }
@@ -322,10 +297,9 @@ p.orchard span {
 div#footer {
     background-image: url("../images/bg/bg_footer.gif");
     background-repeat: repeat-x;
-    width: 952px;
-    width: 100%;
-    height: 42px;
+    height: 41px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 img.house {
@@ -361,6 +335,3 @@ p.realty_company {
     left: 753px;
     top: 16px;
 }
-
-
-

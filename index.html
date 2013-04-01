@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
+    <meta http-equiv="x-ua-compatible" content="IE=9">
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="IE=8">
     <link rel="stylesheet" type="text/css" media="screen" href="style/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style/style.css">
     <title>Comcap</title>
 </head>
 <body>
 <div id="bg_top"></div>
-<div id="white_stripe"> <!--header and menu-->
-
+<div id="white_stripe" class="content"> <!--header and menu-->
     <img class="company" src="images/company_name.png" alt="company name">
 
     <h2 class="slogan">SOME SLOGAN GOES HERE</h2>
 
     <div class="call_us group">
         <img class="call" src="images/icons/call_phone.png" alt="call us">
-        <h4 class="call">CALL US AT</h4>
+
+        <p class="call">CALL US AT</p>
 
         <p class="number">(333) 999-9999</p>
     </div>
-
-    <div id="menu" class="group">
-
+    <div id="menu" class="group content">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Company</a></li>
@@ -33,18 +31,17 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
-
-
     </div>
 </div>
 
-<div id="middle_content">
-    <img class="photo_nr_1" src="images/photo/1photo.jpg" alt="picture"/><img class="photo_nr_2" src="images/photo/2photo.jpg" alt="picture" />
+<div id="middle" class="content">
+    <img src="images/photo/1photo.jpg" alt="property in NY"/><img src="images/photo/2photo.jpg" alt="Cool villa in Ohio"/>
+
     <div id="form" class="group">
         <h2>FIND A PROPERTY</h2>
         <img src="images/icons/loupe.png" alt="loupe">
 
-        <form action="" method="get">
+        <form action="" method="GET">
             <dl>
                 <dt><label class="first">BEDROOMS</label></dt>
                 <dd><input type="radio" id="any">
@@ -66,7 +63,6 @@
                 </dd>
                 <dt><label class="first">COMMUNITY</label></dt>
                 <dd><select class="select" name="community">
-
                     <option value="no_reference">No reference</option>
                     <option value="one">One</option>
                     <option value="two">Two</option>
@@ -74,7 +70,6 @@
                 </dd>
                 <dt><label class="first">RENT</label></dt>
                 <dd><select class="select rent" name="rent">
-
                     <option value="no_reference">No reference</option>
                     <option value="one">One</option>
                     <option value="two">Two</option>
@@ -82,7 +77,6 @@
                 </dd>
                 <dt><label class="first">SQ.FOOTAGE</label></dt>
                 <dd><select class="select" name="footage">
-
                     <option value="no_reference">No reference</option>
                     <option value="one">One</option>
                     <option value="two">Two</option>
@@ -91,16 +85,13 @@
 
                 <dt><label class="first">AVAILABILITY</label></dt>
                 <dd><select class="select" name="availability">
-
                     <option value="no_reference">No reference</option>
                     <option value="one">One</option>
                     <option value="two">Two</option>
                 </select>
                 </dd>
-
                 <dt><label class="first">PETS POLICY</label></dt>
                 <dd><select class="select" name="pets">
-
                     <option value="no_reference">No reference</option>
                     <option value="one">One</option>
                     <option value="two">Two</option>
@@ -113,74 +104,70 @@
                     <label for="attached">Attached</label>
                     <input type="radio" id="detached">
                     <label for="detached">Detached</label><br>
-
                 </dd>
             </dl>
             <input id="submit" type="submit" value="SEARCH NOW">
         </form>
     </div>
-    <div id="properties">
+    <div class="properties group fl">
+        <h5><a href="#">FEATURED PROPERTIES</a></h5>
+    </div>
+    <div id="offer" class="group">
+        <div>
+            <a href="#">
+                <img src="images/icons/camera.jpg" alt="camera" class="fl"/>
 
-        <img class="semicircle" src="images/semicircle1a.png" alt="semicircle">
-        <img class="semicircle_b" src="images/semicircle1b.png" alt="semicircle">
-
-        <div class="properties">
-            <h5><a href="#">FEATURED PROPERTIES</a></h5>
+                <p>TAKE A<span> PHOTO TOUR</span></p>
+            </a>
         </div>
-        <div id="offer" class="group">
-            <div class="photo">
-                <a href="#"><img src="images/icons/camera.jpg" alt="camera"></a>
+        <div>
+            <a href="#">
+                <img src="images/icons/dolar.jpg" alt="dolar" class="fl"/>
 
-                <p class="photo_tur">TAKE A<span> PHOTO TOUR</span></p>
-            </div>
-            <div class="view">
-                <a href="#"><img src="images/icons/dolar.jpg" alt="dolar"></a>
+                <p>VIEW <span>SPECIAL OFFERS</span></p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="images/icons/mobile.jpg" alt="mobile" class="fl"/>
 
-                <p class="dolar">VIEW <span>SPECIAL OFFERS</span></p>
-            </div>
-            <div class="blog">
-                <a href="#"><img src="images/icons/mobile.jpg" alt="mobile"></a>
+                <p>READ THE <span>COMCAP BLOG</span></p>
+            </a>
+        </div>
+    </div>
+    <div id="apartments">
+        <div class="apartment">
+            <img class="ofer_photo" src="images/photo/3photo.jpg" alt="photo">
+            <img class="triangle" src="images/triangle.png" alt="triangle">
 
-                <p class="read">READ THE <span>COMCAP BLOG</span></p>
+            <p class="price">$950</p>
+
+            <div class="description">
+                <p>ORCHARD HILL APARTMENTS<br><span>Thornton, Colorado</span></p>
             </div>
 
         </div>
-        <div id="apartments">
-            <div class="apartment">
-                <img class="ofer_photo" src="images/photo/3photo.jpg" alt="photo">
-                <img class="triangle" src="images/triangle.png" alt="triangle">
+        <div class="apartment">
+            <img class="ofer_photo" src="images/photo/3photo.jpg" alt="photo">
+            <img class="triangle" src="images/triangle.png" alt="triangle">
 
-                <p class="price">$950</p>
+            <p class="price">$1000</p>
 
-                <div class="description">
-                    <p class="orchard">ORCHARD HILL APARTMENTS<br><span>Thornton, Colorado</span></p>
-                </div>
-
-            </div>
-            <div class="apartment">
-                <img class="ofer_photo" src="images/photo/3photo.jpg" alt="photo">
-                <img class="triangle" src="images/triangle.png" alt="triangle">
-
-                <p class="price">$1000</p>
-
-                <div class="description">
-                    <p class="orchard">SPRING HOLLOW APARTMENTS<br><span>Brighton, Colorado</span></p>
-                </div>
-
-            </div>
-            <div class="apartment">
-                <img class="ofer_photo" src="images/photo/3photo.jpg" alt="photo">
-                <img class="triangle" src="images/triangle.png" alt="triangle">
-
-
-                <p class="price">$1200</p>
-
-                <div class="description">
-                    <p class="orchard">SOME OTHER APARTMENTS<br><span>Somewhere, Colorado</span></p>
-                </div>
-
+            <div class="description">
+                <p>SPRING HOLLOW APARTMENTS<br><span>Brighton, Colorado</span></p>
             </div>
 
+        </div>
+        <div class="apartment">
+            <img class="ofer_photo" src="images/photo/3photo.jpg" alt="photo">
+            <img class="triangle" src="images/triangle.png" alt="triangle">
+
+
+            <p class="price">$1200</p>
+
+            <div class="description">
+                <p>SOME OTHER APARTMENTS<br><span>Somewhere, Colorado</span></p>
+            </div>
         </div>
     </div>
     <div id="footer">
@@ -190,9 +177,6 @@
 
         <p class="realty_company">© 2008 ComCap Realty Company</p>
     </div>
-
 </div>
-
-
 </body>
 </html>
