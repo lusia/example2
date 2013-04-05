@@ -12,6 +12,10 @@
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
+.dn {
+    display: none;
+}
+
 .fr {
     float: right;
 }
@@ -67,7 +71,7 @@ div#call_us {
     width: 160px;
     position: absolute;
     top: 20px;
-    left:780px
+    left: 780px
 }
 
 img#call_icon {
@@ -133,6 +137,10 @@ div#menu ul li.active {
 div#middle {
     min-height: 675px;
     background-color: #ffffff;
+    -moz-box-shadow: 0 9px 10px 5px #888;
+    -webkit-box-shadow: 0 9px 10px 5px #888;
+    box-shadow: 0 9px 10px 5px #888;
+    position: relative;
 }
 
 div#form {
@@ -140,6 +148,18 @@ div#form {
     height: 388px;
     width: 317px;
     float: right;
+}
+
+img.semicircle_part1 {
+    position: absolute;
+    left: 0px;
+    top: 244px;
+}
+
+img.semicircle_part2 {
+    position: absolute;
+    left: 639px;
+    top: 347px;
 }
 
 h2 {
@@ -334,7 +354,58 @@ p#template_source {
     left: 753px;
     top: 16px;
 }
+
 p#template_source a {
     color: #ffffff;
     outline: none;
 }
+
+div#appear_box {
+    position: fixed;
+    top: 150px;
+    left: 70px;
+    height: 90px;
+    width: 440px;
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    border-radius: 10px 10px 10px 10px;
+}
+
+div#appear_box img {
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+p#show_box {
+    margin-top: 25px;
+    margin-left: 78px;
+    font-family: 'Simonetta', cursive;
+    line-height: 20px;
+    opacity: 0.1;
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity = 20);
+}
+
