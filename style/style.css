@@ -132,6 +132,7 @@ div#menu ul li.active {
     height: 24px;
     border-radius: 10px 10px 0 0;
     color: #ffffff;
+    behavior: url("pie/PIE.htc");
 }
 
 div#middle {
@@ -375,6 +376,7 @@ div#appear_box {
     background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     border-radius: 10px 10px 10px 10px;
+    behavior: url("pie/PIE.htc");
 }
 
 div#appear_box img {
